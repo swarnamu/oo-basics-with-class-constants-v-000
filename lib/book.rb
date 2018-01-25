@@ -8,6 +8,11 @@ class Book
     @title = title
   end
 
+  def genre=(genre)
+    @genre = genre
+    GENRES << genre
+  end
+
   def turn_page
     puts "Flipping the page...wow, you read fast!"
   end
